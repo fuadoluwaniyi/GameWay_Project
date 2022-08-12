@@ -1,0 +1,366 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+body{
+    background-color: goldenrod;
+}
+header{
+    background-color: goldenrod;
+    padding: 15px;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+header h1{
+    color: black;
+    border: 7px solid  black;
+    padding: 6px 12px;
+    display: inline-block;
+    border-radius: 36px;
+}
+.banner{
+    background-color: black;
+    position: relative;
+}
+.banner img{
+    max-width: 100%;  
+    height: auto; 
+}
+.banner .welcome{
+    background-color: black;
+    color: goldenrod;
+    padding: 20px;
+    position: absolute;
+    left: 35%;
+    top: 15%;
+}
+.banner h2{
+    font-size: 70px;
+}
+.banner h2 span{
+    font-size: 1.3em;
+}
+nav{
+    background-color: black;
+    padding: 20px;
+    position: sticky;
+    top: 92px;
+}
+nav ul{
+    white-space: nowrap;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+nav li{
+    width: 18.5%;
+    display: inline-block;
+    font-size: 25px;
+}
+.footer-nav li{
+    width: 17%;
+    display: inline-block;
+    font-size: 25px;
+}
+nav li a{
+    text-decoration: none;
+    color: goldenrod;
+}
+nav li.first{
+    color: gold;
+}
+main{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+article h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 35px;
+}
+article h2 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(82, 74, 74);
+    font-size: 20px;
+}
+article p{
+    line-height: 2em;
+    color: black;
+}
+.image{
+    text-align: center;
+    margin: 80px 0;
+    white-space: nowrap;
+}
+.image li{
+    display: inline-block;
+    width: 200px;
+    margin: 20px 5%;
+}
+.image li img{
+    max-width: 100%;
+}
+article{
+    max-width: 100%;
+    width: 1200px;
+    margin: 80px auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+.another article h2{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 30px;
+}
+.another article h2 span{
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(82, 74, 74);
+    font-size: 20px;
+}
+.another article p{
+    line-height: 2em;
+    color: black;
+}
+footer{
+    color: goldenrod;
+    text-align: center;
+    padding: 40px 15px;
+    background-color: black;
+}
+footer h1{
+    font-size: 40px;
+    font-family: fantasy;
+    color: gold;
+}
+.join h2{
+    font-size: 20px;
+    font-style: italic;
+    font-family: cursive;
+}
+.join p{
+    font-size: 0.8em;
+    font-style: italic;
+    font-family: cursive;
+}
+form input{
+    margin: 20px 0;
+    padding: 10px 20px;
+    border: solid 4px whitesmoke;
+    border-radius: 28px;
+}
+footer p.copyright{
+    font-family: cursive;
+}
+form.search{  
+    display: block;  
+    left: 30%;  
+    position: absolute;  
+    top: 30%;  
+  }  
+  /* The following tag selector input uses the different properties for the search box. */  
+    input[type=search]{  
+      border: 5px  orange;  
+      box-sizing: border-box;  
+      font-size:0.7em;  
+      height: 2em;  
+      margin-left: 360%;   
+      margin-top: inherit;
+      transition: all 2s ease-in;  
+      width: 10vw;  
+      z-index:0;  
+      }  
+      focus {  
+        border: solid 3px #09f;        
+        outline: solid #fc0 2000px; 
+    }
+
+    
+/* psuedo classes */
+
+nav li a:hover{
+    text-decoration: underline;
+}
+.image li:hover{
+    position: relative;
+    top: -4px;
+}
+form input:focus{
+    border: 4px solid blue;
+    outline: none;
+}
+form input:valid{
+    border: rgb(0, 255, 0) 4px solid;
+}
+article p::first-line{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join p::first-letter{
+    font-size: 1.2em;
+}
+p::selection{
+    background-color: rgb(199, 241, 13);
+    color: black;
+}
+article p::after{
+    content: '..';
+}
+
+/* manu base style */
+nav {
+    background-color: black;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+}
+nav a{
+    text-decoration: none;
+    text-align: centre;
+    color: inherit;
+    display: block;
+    padding: 10px;
+}
+nav a:hover{
+    background-color: #555;
+}
+
+/* flex styles */
+
+@media screen and (max-width: 1400px){
+    .banner h2{
+        font-size: 55px;
+    }
+    nav li{
+        font-size: 18px;
+    }
+    .footer-nav li{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .banner h2{
+        font-size: 52px;
+    }
+    nav li{
+        width: 17%;
+        font-size: 18px;
+    }
+    .footer-nav li{
+        font-size: 18px;
+    }
+    .image li{
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 950px){
+    .banner h2{
+        font-size: 2.25em;
+    }
+    nav li{
+        width: 17%;
+        font-size: 15px;
+    }
+    .footer-nav li{
+        font-size: 15px;
+    }
+    .image li{
+        width: 15vw;
+    }
+}
+
+@media screen and (max-width: 700px){
+    .banner h2{
+        font-size: 20px;
+    }
+    nav li{
+        width: 17%;
+        font-size: 15px;
+    }
+    .footer-nav li{
+        font-size: 15px;
+    }
+    .image li{
+        width: 30vw;
+    }
+    .image li.drop{
+        width: 30vw;
+    }
+    header{
+        padding: 7px;
+    }
+
+/* flex style for menu */
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+}
+nav li{
+    flex: 1 1 0;
+}
+
+
+
+}
+
+@media screen and (max-width: 550px){
+    .banner h2{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .banner h2{
+        position: relative;
+        font-size: 35px;
+    }
+    nav li{
+        width: 16%;
+        font-size: 13px;
+    }
+    header{
+        padding: 5px;
+        position: relative;
+    }
+    header h1{
+        border: 6px solid ;
+        padding: 3px 6px;
+        display: inline-block;
+        border-radius: 36px;
+    }
+    .banner h2{
+        display: none;
+    }   
+    nav{
+        top: 0%;
+    }
+    article h2{
+        font-size: 13px;
+    }
+    article p{
+        font-size: 10px;
+    }
+    .image li{
+        display:inline-block;
+        width: 45%;
+        margin: 0px 0px;
+        padding: 0px 0px;
+    }
+    .main-nav ul li form.search{
+        display: none;
+    }
+    .footer-nav li{
+        font-size: 10px;
+        padding: none;
+        margin: none;
+    }
+}
